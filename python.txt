@@ -1,0 +1,20 @@
+class student:
+    def __init__(self,name,reg,ca1,ca2,ca3):
+        self.n=name
+        self.r=reg
+        self.C1=ca1
+        self.C2=ca2
+        self.C3=ca3
+        
+    def display(self):
+        print("Name of the student=",self.n)
+        print("registration number of the student=",self.r)
+        print("total marks of the student=",self.C1+self.C2+self.C3)
+        
+n1=input("enter the name=")
+r1=int(input("enter the regno="))
+mc1=int(input("enter marks ca1="))
+mc2=int(input("enter marks ca2="))
+mc3=int(input("enter marks ca3="))
+s=student(n1,r1,mc1,mc2,mc3)
+s.display()
